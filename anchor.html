@@ -1,28 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>anchortag</title>
+  <meta charset="UTF-8">
+  <title>Anchor Tag Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    h2 {
+      margin-top: 30px;
+      color: darkblue;
+    }
+    a {
+      text-decoration: none;
+      margin: 5px;
+      display: inline-block;
+    }
+    a:link { color: blue; }       /* Not visited */
+    a:visited { color: purple; }  /* Visited */
+    a:hover { color: green; }     /* Hover */
+    a:active { color: red; }      /* While clicking */
+    iframe {
+      margin-top: 20px;
+      border: 1px solid black;
+    }
+  </style>
 </head>
 <body>
-   <a href="./HTML/mediaTags.html">Go to media tag page</a>
-   <a href="./HTML/fieldset.html"> field set</a>
 
-   <a href="https://www.instagram.com/im_faizansheikh">instagram</a>
-   <a href="https://www.linkedin.com/in/faizan-sheikh-535752208">linkedin</a>
-   <a href="mailto:faizansheikh2651@gmail.com">email</a>
+  <h1>Anchor Tag Examples</h1>
 
-<hr>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.4949059338605!2d78.95404907500382!3d20.052962181363327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd31ff8cec0f8cf%3A0x4c63dae74b092fcc!2sFaizan%20Sheikh%20House!5e1!3m2!1sen!2sin!4v1757744440050!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <!-- 1. Basic Anchor -->
+  <h2>1. Basic Anchor</h2>
+  <a href="./page.html">Go to Another Page</a>
 
+  <!-- 2. Target Attribute -->
+  <h2>2. Anchor with Target</h2>
+  <a href="https://www.google.com" target="_self">Open in Same Tab (_self)</a><br>
+  <a href="https://www.google.com" target="_blank">Open in New Tab (_blank)</a><br>
+  <a href="https://www.google.com" target="_parent">Open in Parent Frame (_parent)</a><br>
+  <a href="https://www.google.com" target="_top">Open in Top Frame (_top)</a>
 
-  <hr>
+  <!-- 3. Jump to Section -->
+  <h2>3. Jump to Section in Same Page</h2>
+  <a href="#about">Go to About Section</a>
+  <p>Scroll down and click the link above to jump.</p>
+  <div style="height:200px;"></div> <!-- Just to add space -->
+  <h3 id="about">About Section</h3>
+  <p>This is the about section content.</p>
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/xGtEE0qLuXA?si=h2Et1z5XAXFU5NyK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <!-- 4. Links to Apps -->
+  <h2>4. Links to Applications</h2>
+  <a href="tel:+919211827227">Call Us</a><br>
+  <a href="sms:+919511282772">Send SMS</a><br>
+  <a href="https://wa.me/919511287227?text=Hello">WhatsApp Us</a><br>
+  <a href="https://t.me/username">Contact on Telegram</a><br>
+  <a href="mailto:faizansheikh2651@gmail.com?subject=Leave%20Application&body=I%20want%20leave%20for%20a%20day">Send Email</a>
 
+  <!-- 5. Anchor + Iframe -->
+  <h2>5. Anchor + Iframe Example</h2>
+  <a href="https://www.wikipedia.org" target="myframe">Open Wikipedia</a> |
+  <a href="https://www.google.com" target="myframe">Open Google</a> |
+  <a href="https://www.youtube.com" target="myframe">Open YouTube</a>
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Fkrb47qP5H8?si=Atf6DBjLO-ipifH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <br>
+  <iframe name="myframe" width="600" height="400"></iframe>
 
 </body>
 </html>

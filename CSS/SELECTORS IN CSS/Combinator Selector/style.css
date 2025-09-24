@@ -1,0 +1,16 @@
+main>div>#s2{
+   background-color: salmon;
+}
+
+
+main{
+   background: yellow;
+}
+
+p+main{
+   background: orange;
+}
+
+div+p{
+   background: orange;
+}

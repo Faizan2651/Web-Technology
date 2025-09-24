@@ -1,0 +1,19 @@
+h1:hover{
+   background: red;
+}
+
+
+li::marker{
+   content: "👉";
+   color: blue;
+}
+
+
+
+a[target]{
+   background: red;
+}
+
+a[target="_blank"]{
+   color: white;
+}

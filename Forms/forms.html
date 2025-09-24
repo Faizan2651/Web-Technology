@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms Demo</title>
+</head>
+<body>
+
+  <form action="">
+
+    <!-- Text + Password -->
+    <hr>
+    <label>Username:</label>
+    <input type="text" placeholder="Enter username">
+    <br><br>
+    <label>Password:</label>
+    <input type="password" placeholder="Enter password">
+    <br>
+    <button type="submit">Submit</button>
+
+    <!-- Button -->
+    <hr>
+    <input type="button" value="Click Me">
+
+    <!-- Checkbox -->
+    <hr>
+    <label><input type="checkbox"> Accept Terms</label>
+
+    <!-- Color -->
+    <hr>
+    <label>Pick a Color:</label>
+    <input type="color">
+    <button type="submit">Submit</button>
+
+    <!-- Date -->
+    <hr>
+    <label>Date:</label>
+    <input type="date">
+    <button type="submit">Submit</button>
+
+    <!-- Datetime (not supported in modern browsers) -->
+    <hr>
+    <label>Date & Time (Old):</label>
+    <input type="datetime">
+    <button type="submit">Submit</button>
+
+    <!-- Datetime-local -->
+    <hr>
+    <label>Date & Time:</label>
+    <input type="datetime-local">
+    <button type="submit">Submit</button>
+
+    <!-- Email -->
+    <hr>
+    <label>Email:</label>
+    <input type="email" placeholder="example@mail.com">
+    <button type="submit">Submit</button>
+
+    <!-- File -->
+    <hr>
+    <label>Upload File:</label>
+    <input type="file">
+    <button type="submit">Submit</button>
+
+    <!-- Hidden -->
+    <hr>
+    <input type="hidden" name="username" value="12345">
+
+    <!-- Image Button -->
+    <hr>
+    <input type="image" src="./assets/images/Snapchat-116361370.jpg" alt="Submit" width="100">
+
+    <!-- Month -->
+    <hr>
+    <label>Month:</label>
+    <input type="month">
+    <button type="submit">Submit</button>
+
+    <!-- Number -->
+    <hr>
+    <label>Number:</label>
+    <input type="number">
+    <button type="submit">Submit</button>
+
+    <!-- Password -->
+    <hr>
+    <label>Password:</label>
+    <input type="password">
+    <button type="submit">Submit</button>
+
+    <!-- Radio -->
+    <hr>
+    <label><input type="radio" name="option"> Option 1</label>
+    <label><input type="radio" name="option"> Option 2</label>
+    <button type="submit">Submit</button>
+
+    <!-- Range -->
+    <hr>
+    <label for="volume">Volume:</label>
+    <input type="range" id="volume" name="volume" min="0" max="100" value="50" oninput="rangeValue.textContent=this.value">
+    <span id="rangeValue">50</span>
+    <button type="submit">Submit</button>
+
+    <!-- Reset -->
+    <hr>
+    <input type="reset" value="Reset">
+    <button type="submit">Submit</button>
+
+    <!-- Search -->
+    <hr>
+    <label>Search:</label>
+    <input type="search" placeholder="Search...">
+    <input type="reset" value="Clear">
+    <button type="submit">Submit</button>
+
+    <!-- Submit -->
+    <hr>
+    <input type="submit" value="Submit">
+
+    <!-- Telephone -->
+    <hr>
+    <label>Phone:</label>
+    <input type="tel" value="+91">
+    <button type="submit">Submit</button>
+
+    <!-- Text -->
+    <hr>
+    <label>Text:</label>
+    <input type="text">
+
+    <!-- URL -->
+    <hr>
+    <label>Website:</label>
+    <input type="url" placeholder="https://example.com">
+
+    <!-- Week -->
+    <hr>
+    <label>Week:</label>
+    <input type="week">
+
+<br> <br>
+<!-- Checkbox Example -->
+<h3>Languages Known:</h3>
+<input id="marathi" type="checkbox">
+<label for="marathi">Marathi</label>
+
+<input id="hindi" type="checkbox">
+<label for="hindi">Hindi</label>
+
+<input id="english" type="checkbox">
+<label for="english">English</label>
+
+<input id="urdu" type="checkbox">
+<label for="urdu">urdu</label>
+
+<button type="submit">Submit</button>
+
+<br><br>
+
+<!-- Radio Button Example -->
+<h3>Gender:</h3>
+<input name="gender" id="male" type="radio">
+<label for="male">Male</label>
+
+<input name="gender" id="female" type="radio">
+<label for="female">Female</label>
+
+<input name="gender" id="other" type="radio">
+<label for="other">Other</label>
+
+<button type="submit">submit</button>
+<br><br>
+
+
+<label for="phone">Phone Code:</label>
+<input type="text" id="phone" value="+91" readonly>
+
+<br><br><br>
+
+<!-- Dropdown Example -->
+<label for="state">Select State:</label>
+<select name="state" id="state">
+  <option value="Maharashtra">Maharashtra</option>
+  <option value="UP">Uttar Pradesh</option>
+  <option value="MP">Madhya Pradesh</option>
+  <option value="Goa">Goa</option>
+</select>
+
+  </form>
+
+
+
+
+<!--                forms all attributes          -->
+
+<form action="">
+
+<br><br><br><br>
+<h1> forms all attributes with examples</h1>
+
+
+
+
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" 
+         placeholder="Enter username"
+         minlength="3" maxlength="10" 
+         required autofocus>
+         <button>submit</button>
+  <br><br>
+
+
+    <!-- Required Email -->
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" 
+         placeholder="example@gmail.com" required>
+  <br><br>
+
+    <!-- Password with minlength/maxlength -->
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password"
+         minlength="6" maxlength="12" required>
+  <br><br>
+
+  <!-- Pattern (10-digit phone) -->
+  <label for="phone">Phone:</label>
+  <input type="text" id="phone" name="phone"
+         placeholder="10 digit number"
+         pattern="[0-9]{10}" required>
+  <br><br>
+
+  <!-- Checked -->
+  <label>Gender:</label>
+  <input id="Male" type="radio" name="gender" value="male" checked>
+  <label for="Male">Male</label>
+  <input id="Female" type="radio" name="gender" value="female">
+  <label for="Female">Female</label>
+  <br><br>
+
+  <!-- Readonly vs Disabled -->
+  <label>Country (readonly):</label>
+  <input type="text" value="India" readonly>
+  <br><br>
+
+  <label>City (disabled):</label>
+  <input type="text" value="Mumbai" disabled>
+  <br><br>
+
+  <!-- Accesskey -->
+  <label for="website">Website:</label>
+  <input type="url" id="website" name="website" placeholder="https://example.com" accesskey="w">
+  <p>💡 Press <kbd>Alt + W</kbd> (Windows) or <kbd>Ctrl + Option + W</kbd> (Mac) to focus Website field.</p>
+  <br>
+
+  <!-- Submit Button -->
+  <button type="submit" accesskey="s">Submit (Alt+S)</button>
+  <button type="reset">Reset</button>
+
+</form>
+
+</body>
+</html>

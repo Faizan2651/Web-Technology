@@ -1,0 +1,28 @@
+
+/*         1 simple selector */
+
+/* id */
+#id{
+   background-color: yellow;
+}
+/* class */
+.class {
+   background-color: ;
+   background-color: blue;
+}
+
+
+
+/* Groping selector */
+.heading,div,#sec{
+   background-color: red;
+}
+
+
+/* univeral selector */
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
